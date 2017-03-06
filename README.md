@@ -14,7 +14,7 @@ dnsdist starts and listens on ports 53 for dns in the container.
 To map it to the host's ports, use the following command to create and start the container instead:
 
 ```bash
-docker run -t --name dnsdist -p 53:53/tcp -p 53:53/udp -t uniplug/dnsdist-docker
+docker run -t --name dnsdist -p 53:53/tcp -p 53:53/udp -t sukiyaki/dnsdist
 ```
 
 ### Additional settings
@@ -27,5 +27,5 @@ docker run -t \
  --name dnsdist \
  -v /data/dnsdist/:/etc/dnsdist/ \
  -p 53:53/udp \
- uniplug/dnsdist-docker
+ sukiyaki/dnsdist
 ```
